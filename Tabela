@@ -1,0 +1,40 @@
+soma = 0
+
+    for i in range(1, n + 1):
+
+        for j in range(1, n + 1):
+
+            aleatorio = random.randint(1, 1000)
+
+            soma += aleatorio
+
+    return soma
+
+soma = 0
+
+    for i in range(1, n + 1):
+
+        for j in range(1, n + 1):
+
+            for k in range(1, n + 1):
+
+                aleatorio = random.randint(1, 1000)
+
+                soma += aleatorio
+
+    return soma
+
+inicio = time.time()
+
+    funcao(n)
+
+    fim = time.time()
+
+    return fim - inicio
+
+
+tempo_algoritmo_1 = medir_tempo(algoritmo_1, n)
+
+    tempo_algoritmo_2 = medir_tempo(algoritmo_2, n)
+
+    resultados.append((n, tempo_algoritmo_1, tempo_algoritmo_2))
